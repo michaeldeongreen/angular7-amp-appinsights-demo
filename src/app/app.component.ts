@@ -1,7 +1,7 @@
 import { Component, AfterViewInit, OnInit } from '@angular/core';
 import { AmpDiagnosticsLoggerService } from './amp-diagnostics/amp-diagnostics-logger.service';
 import { AmpDiagnosticsLoggerConfiguration } from './amp-diagnostics/amp-diagnostics-logger-configuration';
-import { Mezzanine } from './amp-diagnostics/mezzanine';
+import { Mezzanine } from './mezzanine';
 
 
 @Component({
