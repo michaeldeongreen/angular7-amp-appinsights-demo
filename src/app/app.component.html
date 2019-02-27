@@ -1,0 +1,22 @@
+<video id="vid1" class="azuremediaplayer amp-default-skin amp-big-play-centered" data-setup='{}' tabindex="0"></video>
+<br>
+<div>
+  <table style="width:100%">
+    <thead>
+      <tr>
+        <th>Poster</th>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Url</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let mezzanine of Mezzanines">
+      <tr>
+        <td><a href="javascript:void(0);"><img src="../../assets/play-media.png" (click)="setMovie(mezzanine)" /></a></td>
+        <td>{{mezzanine.id}}</td>
+        <td>{{mezzanine.title}}</td>
+        <td><a (click)="setMovie(mezzanine)" href="javascript:void(0);">{{mezzanine.url}}</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
