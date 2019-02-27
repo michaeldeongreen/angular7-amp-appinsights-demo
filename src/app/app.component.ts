@@ -47,6 +47,8 @@ export class AppComponent implements AfterViewInit, OnInit {
 
   /**
    * setMovie method is called when the user clicks on the play icon or url of the mezzanine row on app.component.html
+   * The log method of AmpDiagnosticsLoggerService is called and passed the mezzanine id but the value can be any string.
+   * In this case, the mezzanine id will be used to set the User Id field in Application Insights
    * @param mezzanine custom interface used in demo that has an id, title and url
    */
   public setMovie(mezzanine: Mezzanine) {
