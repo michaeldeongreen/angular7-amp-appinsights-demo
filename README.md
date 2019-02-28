@@ -35,3 +35,9 @@ If *_isInitialized* is false, the service will log a warning to the JavaScript c
 
 ## External Resources
 [How to send Azure Media Player Telemetry Information to Azure Application Insights in a Angular 7 Application](https://blog.michaeldeongreen.com/post/how-to-send-azure-media-player-telemetry-information-to-azure-application-insights-in-a-angular-7-application)
+
+## License
+
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+Licensed under the [MIT](https://github.com/michaeldeongreen/angular7-amp-appinsights-demo/blob/master/LICENSE.txt) License.
