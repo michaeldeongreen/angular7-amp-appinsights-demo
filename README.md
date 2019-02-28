@@ -1,6 +1,6 @@
 # Overview
 
-This guide provides a general overview of the components that allow for Azure Media Player Telemetry to be sent to Azure Application Insights.  The classes discussed in this README are located in the *app-diagnostics* folder.  Please the the blog link in the *External Resources* section for an overview of how the Angular application works.
+This guide provides a general overview of the components that allow for Azure Media Player Telemetry to be sent to Azure Application Insights.  The classes discussed in this README are located in the *app-diagnostics* folder.  Please see the blog link in the *External Resources* section for an overview of how the Angular application works.
 
 ## Dependencies:
 * [applicationinsights-js](https://www.npmjs.com/package/applicationinsights-js)
