@@ -9,6 +9,10 @@ import { Mezzanine } from './mezzanine';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+/**
+ * The AppComponent class demonstrates how to use the AmpDiagnosticsLoggerService service to send Azure Media Player telemetry information to
+ * Application Insights.
+ */
 export class AppComponent implements AfterViewInit, OnInit {
   title = 'angular7-amp-appinsights-demo';
   private player: amp.Player; // azuremediaplayer.d.ts object.  See Azure Media Player documentation for details.
@@ -17,7 +21,7 @@ export class AppComponent implements AfterViewInit, OnInit {
   constructor(private ampDiagnosticsLoggerService: AmpDiagnosticsLoggerService) { }
 
   ngOnInit() {
-    // Hardcoded list of mezzanine objects
+    // Hardcoded list of mezzanine objects that are displayed to the user to play
     this.Mezzanines = [{ id: 'project-000-001', title: 'Movie 1', url: '//amssamples.streaming.mediaservices.windows.net/91492735-c523-432b-ba01-faba6c2206a2/AzureMediaServicesPromo.ism/manifest' },
     { id: 'project-000-002', title: 'Movie 2', url: '//amssamples.streaming.mediaservices.windows.net/91492735-c523-432b-ba01-faba6c2206a2/AzureMediaServicesPromo.ism/manifest' },
     { id: 'project-000-003', title: 'Movie 3', url:'//amssamples.streaming.mediaservices.windows.net/91492735-c523-432b-ba01-faba6c2206a2/AzureMediaServicesPromo.ism/manifest' }];
