@@ -6,13 +6,14 @@ This guide provides a general overview of the components that allow for Azure Me
 * Create an Application Insights Resource in the Azure Portal.  Official documentation can be found [here](https://docs.microsoft.com/en-us/azure/azure-monitor/app/create-new-resource)
 * Install Docker. Official documentation can be found [here](https://docs.docker.com/install/)
 * Clone the *angular7-amp-appinsights-demo* Git Repository
-* Open up the Angular application in your IDE of choice and find the line below in the *app.compoent.ts* file and replace the words *APPLICATION INSIGHTS INSTRUMENTATION KEY HERE* with the Appliction Insights *Instrumentation Key* from your Application Insights Resource
+* Open up the Angular application in your IDE of choice and find the line below in the *app.compoent.ts* file and replace the words *APPLICATION INSIGHTS INSTRUMENTATION KEY HERE* with the Appliction Insights *Instrumentation Key* from your Application Insights Resource:
 ```typescript
     const ampDiagnosticsLoggerConfiguration: AmpDiagnosticsLoggerConfiguration =  {
       appName: 'play-media-component',
       player: this.player,
       instrumentationKey: 'APPLICATION INSIGHTS INSTRUMENTATION KEY HERE'};
       this.ampDiagnosticsLoggerService.initialize(ampDiagnosticsLoggerConfiguration);
+  }
 ```
 * Open a Terminal/Command Prompt and navigate to the directory where you cloned the repository and run the following commands:
 ```bash
