@@ -15,14 +15,14 @@ This guide provides a general overview of the components that allow for Azure Me
       this.ampDiagnosticsLoggerService.initialize(ampDiagnosticsLoggerConfiguration);
   }
 ```
-* Open a Terminal/Command Prompt and navigate to the directory where you cloned the repository and run the following commands:
+* Open a Terminal/Command Prompt and navigate to the directory where you cloned the repository and run the following commands (*Note: Linux users may need to use sudo*):
 ```bash
 # Build docker image and run container
 docker build -t angular7-amp-appinsights-demo:1.0.0 . \ 
 && docker run -p 4200:80 angular7-amp-appinsights-demo:1.0.0
 ```
+* Open up a browser and navigate to *http://localhost:4200*
 
-Note: Linux users *may* need to use *sudo*
 
 
 ## AmpDiagnosticsLoggerService Dependencies:
