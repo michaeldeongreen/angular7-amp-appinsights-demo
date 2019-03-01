@@ -2,11 +2,25 @@
 
 This guide provides a general overview of the components that allow for Azure Media Player Telemetry to be sent to Azure Application Insights.  The classes discussed in this README are located in the *app-diagnostics* folder.  Please see the blog link in the *External Resources* section for an overview of how the Angular application works.
 
-## Dependencies:
+## How to Run the Angular 7 Application
+* Create an Application Insights Resource in the Azure Portal.  Official documentation can be found [here](https://docs.microsoft.com/en-us/azure/azure-monitor/app/create-new-resource)
+* Install Docker. Official documentation can be found [here](https://docs.docker.com/install/)
+* Clone the *angular7-amp-appinsights-demo* Git Repository
+* Open a Terminal/Command Prompt and navigate to the directory where you cloned the repository and run the following commands
+```bash
+# Build docker image and run container
+docker build -t angular7-amp-appinsights-demo:1.0.0 . \ 
+&& docker run -p 4200:80 angular7-amp-appinsights-demo:1.0.0
+```
+
+Note: Linux users *may* need to use *sudo*
+
+
+## AmpDiagnosticsLoggerService Dependencies:
 * [applicationinsights-js](https://www.npmjs.com/package/applicationinsights-js)
 * [azuremediaplayer.min.js](https://amp.azure.net/libs/amp/latest/azuremediaplayer.min.js)
 
-## Components
+## AmpDiagnosticsLoggerService Components
 
 **AmpDiagnosticsLoggerConfiguration interface** - This interface is used to initialize the *AmpDiagnosticsLoggerService* Service when a Angular Component is ready to use the service.  The interface has 3 properties:
 
