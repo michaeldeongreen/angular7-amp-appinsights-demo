@@ -6,7 +6,7 @@ This guide provides a general overview of the components that allow for Azure Me
 * Create an Application Insights Resource in the Azure Portal.  Official documentation can be found [here](https://docs.microsoft.com/en-us/azure/azure-monitor/app/create-new-resource)
 * Install Docker. Official documentation can be found [here](https://docs.docker.com/install/)
 * Clone the *angular7-amp-appinsights-demo* Git Repository
-* Open a Terminal/Command Prompt and navigate to the directory where you cloned the repository and run the following commands
+* Open a Terminal/Command Prompt and navigate to the directory where you cloned the repository and run the following commands:
 ```bash
 # Build docker image and run container
 docker build -t angular7-amp-appinsights-demo:1.0.0 . \ 
